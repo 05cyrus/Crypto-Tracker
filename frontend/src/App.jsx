@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Coin from './pages/Coin/Coin';
 import Footer from './components/Footer/Footer';
 
+
 function App() {
   return (
     <div className='app'>

@@ -88,6 +88,9 @@
     .market-cap{
         display: none;
     }
+    .orb{
+        display: none;
+    }
 }
 @media(max-width:500px){
     .table-layout div img{
@@ -98,5 +101,8 @@
     }
     .hero form input{
         width: 100px;
+    }
+    .orb{
+        display: none;
     }
 }

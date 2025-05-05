@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import './Home.css';
 import { CoinContext } from '../../context/CoinContext';
 import{Link} from 'react-router-dom';
+import Orb from './Orb';
 
 function Home() {
     const {allCoin,currency}=useContext(CoinContext);
@@ -31,6 +32,14 @@ function Home() {
   return (
     <div className='home'>
         <div className="hero">
+        <div style={{ width: '10%', height: '60px', position: 'relative' }}>
+            <Orb
+                hoverIntensity={1}
+                rotateOnHover={true}
+                hue={0}
+                forceHoverState={false}
+            />
+            </div>
             <h1>Largest <br/> Crypto MarketPlace</h1>
             <p>Welcome to the world's largest cryptocurrency marketplace.Sign up to explore more about cryptos.</p>
             <form onSubmit={searchHandler}>
